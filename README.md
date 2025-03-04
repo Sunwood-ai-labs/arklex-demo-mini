@@ -87,6 +87,16 @@ python eval.py \
   --output-dir ./examples/customer_service
 ```
 
+## 🛠️ 依存関係の管理
+- 柔軟なバージョン指定により、最新の安定したライブラリを使用可能
+- 互換性の問題が発生した場合は、`requirements.txt` のバージョンを調整してください
+
+### 💡 依存関係のトラブルシューティング
+- パッケージのバージョンが競合する場合
+  1. `uv pip install` や `pip install` を使用
+  2. 仮想環境を再作成
+  3. `requirements.txt` のバージョン制約を調整
+
 ## 🛠️ トラブルシューティング
 - APIキーが正しく設定されていることを確認してください
 - 必要に応じて、`python-dotenv` を使用して環境変数を読み込みます
