@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A11CB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2575FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="300" fill="url(#grad1)" rx="20" ry="20"/>
+  
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" alignment-baseline="middle">
+    <tspan x="50%" dy="-30">Arklex Demo</tspan>
+    <tspan x="50%" dy="70" font-size="30">Customer Service Agent</tspan>
+  </text>
+  
+  <circle cx="200" cy="100" r="30" fill="rgba(255,255,255,0.2)">
+    <animate attributeName="r" values="30;50;30" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="1000" cy="200" r="40" fill="rgba(255,255,255,0.2)">
+    <animate attributeName="r" values="40;60;40" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>
