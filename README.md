@@ -116,9 +116,6 @@ python eval.py \
 - 機能リクエスト
 - プルリクエストの送信
 
-## 📄 ライセンス
-[適切なライセンス情報を追加]
-
 ## 🔗 関連リンク
 - [Arklex 公式ドキュメント](https://www.arklex.ai/docs)
 - [GitHub リポジトリ](https://github.com/Sunwood-ai-labs/arklex-demo-mini)
