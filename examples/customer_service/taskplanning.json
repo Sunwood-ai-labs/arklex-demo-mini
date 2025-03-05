@@ -1,0 +1,64 @@
+[
+    {
+        "task_name": "Provide detailed product information",
+        "steps": [
+            "Provide detailed product information"
+        ]
+    },
+    {
+        "task_name": "Assist with purchasing or rental process",
+        "steps": [
+            "Inquire about the user's specific needs or questions regarding the purchasing or rental process.",
+            "Use FaissRAGWorker to retrieve relevant information from the company's internal documentation to address the user's questions.",
+            "Deliver the retrieved information to the user using MessageWorker.",
+            "Ask the user if they have further questions or need additional assistance.",
+            "Guide the user through the next steps in the purchasing or rental process based on their response."
+        ]
+    },
+    {
+        "task_name": "Provide order status and delivery time information",
+        "steps": [
+            "Inquire about the user's order number or details to retrieve the order status information.",
+            "Use FaissRAGWorker to retrieve order status and delivery time information from the company's internal documentation.",
+            "Deliver the retrieved order status and delivery time information to the user using MessageWorker.",
+            "Ask the user if they need further assistance or have additional questions regarding their order.",
+            "Provide further information or escalate the issue using DefaultWorker if the user's query cannot be resolved with the available resources."
+        ]
+    },
+    {
+        "task_name": "Provide technical support and troubleshooting assistance",
+        "steps": [
+            "Inquire about the user's technical issue or the specific problem they are encountering.",
+            "Use the FaissRAGWorker to search the company's internal documentation for relevant solutions or troubleshooting steps.",
+            "Deliver the found solution or troubleshooting steps to the user using the MessageWorker.",
+            "Ask the user if the provided solution resolved their issue or if they need further assistance.",
+            "If the issue is unresolved, offer additional troubleshooting steps or escalate the issue to a human representative if necessary."
+        ]
+    },
+    {
+        "task_name": "Provide installation and setup guidance",
+        "steps": [
+            "Ask the user what specific installation or setup guidance they need.",
+            "Utilize the FaissRAGWorker to search the company's internal documentation for relevant information based on the user's query.",
+            "Deliver the retrieved information to the user using the MessageWorker.",
+            "Ask the user if they need further clarification or additional assistance with the installation or setup process.",
+            "If the user needs more information, repeat steps 2 and 3. Otherwise, confirm if the user is satisfied with the assistance provided."
+        ]
+    },
+    {
+        "task_name": "Assist with scheduling maintenance or service",
+        "steps": [
+            "Use the MessageWorker to greet the user and ask for details about the maintenance or service they want to schedule.",
+            "Utilize the FaissRAGWorker to retrieve information from the company's internal documentation about maintenance or service options and policies.",
+            "Present the retrieved information to the user using the MessageWorker, and ask the user to confirm their preferred service option and time.",
+            "If the user requests additional information or clarification, use the FaissRAGWorker again to gather further details, and provide these to the user with the MessageWorker.",
+            "Once the user confirms their choice, use the MessageWorker to finalize the scheduling and provide confirmation details, including any necessary follow-up actions or contact information."
+        ]
+    },
+    {
+        "task_name": "Provide information on policies and warranties",
+        "steps": [
+            "Provide information on policies and warranties"
+        ]
+    }
+]
