@@ -1,8 +1,12 @@
 <div align="center">
-  <img src="assets/header.svg" width="100%">
-</div>
+
+![Image](https://github.com/user-attachments/assets/81fe197c-fc81-4b25-a310-9170d7ce5ceb)
 
 # 🤖 Arklex デモ: カスタマーサービスエージェント
+
+
+</div>
+
 
 ## 📋 プロジェクト概要
 Arklex フレームワークを使用した、最小構成のカスタマーサービスエージェントデモプロジェクトです。
