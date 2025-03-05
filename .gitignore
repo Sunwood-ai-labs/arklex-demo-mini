@@ -172,3 +172,4 @@ cython_debug/
 
 # Pickle files - serialized Python objects
 *.pkl
+.SourceSageAssets/
