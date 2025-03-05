@@ -1,64 +1,75 @@
 [
     {
-        "task_name": "Provide detailed product information",
+        "task_name": "Provide detailed information about robot specifications, features, and capabilities",
         "steps": [
-            "Provide detailed product information"
+            "Acknowledge the user's request for detailed information about robot specifications, features, and capabilities using MessageWorker.",
+            "Utilize FaissRAGWorker to access and retrieve relevant information from the company's internal documentation about robot specifications, features, and capabilities.",
+            "Deliver the retrieved information to the user through MessageWorker.",
+            "Ask the user if they need further clarification or additional information regarding the robots.",
+            "Based on the user's response, either provide more detailed information using FaissRAGWorker and MessageWorker or conclude the interaction if the user is satisfied."
         ]
     },
     {
-        "task_name": "Assist with purchasing or rental process",
+        "task_name": "Assist with order tracking, delivery times, and logistics information",
         "steps": [
-            "Inquire about the user's specific needs or questions regarding the purchasing or rental process.",
-            "Use FaissRAGWorker to retrieve relevant information from the company's internal documentation to address the user's questions.",
-            "Deliver the retrieved information to the user using MessageWorker.",
-            "Ask the user if they have further questions or need additional assistance.",
-            "Guide the user through the next steps in the purchasing or rental process based on their response."
+            "Use MessageWorker to greet the user and ask for their order number or details required to track their order.",
+            "Use FaissRAGWorker to retrieve information about the order tracking, delivery times, and logistics based on the provided order details from the company's internal documentation.",
+            "Use MessageWorker to deliver the retrieved tracking and delivery information to the user, including the current status and estimated delivery time.",
+            "Ask the user if they need further assistance with their order or have any other questions regarding the delivery or logistics.",
+            "If the user has additional questions, use FaissRAGWorker to gather the relevant information and use MessageWorker to provide the answers. Otherwise, thank the user and close the interaction."
         ]
     },
     {
-        "task_name": "Provide order status and delivery time information",
+        "task_name": "Offer technical assistance and troubleshooting for robot operation and maintenance",
         "steps": [
-            "Inquire about the user's order number or details to retrieve the order status information.",
-            "Use FaissRAGWorker to retrieve order status and delivery time information from the company's internal documentation.",
-            "Deliver the retrieved order status and delivery time information to the user using MessageWorker.",
-            "Ask the user if they need further assistance or have additional questions regarding their order.",
-            "Provide further information or escalate the issue using DefaultWorker if the user's query cannot be resolved with the available resources."
-        ]
-    },
-    {
-        "task_name": "Provide technical support and troubleshooting assistance",
-        "steps": [
-            "Inquire about the user's technical issue or the specific problem they are encountering.",
-            "Use the FaissRAGWorker to search the company's internal documentation for relevant solutions or troubleshooting steps.",
-            "Deliver the found solution or troubleshooting steps to the user using the MessageWorker.",
+            "Ask the user to describe the technical issue or assistance needed for robot operation and maintenance.",
+            "Use FaissRAGWorker to search the company's internal documentation for relevant solutions or troubleshooting steps based on the user's description.",
+            "Deliver the suggested solutions or troubleshooting steps to the user using MessageWorker.",
             "Ask the user if the provided solution resolved their issue or if they need further assistance.",
-            "If the issue is unresolved, offer additional troubleshooting steps or escalate the issue to a human representative if necessary."
+            "If the issue is resolved, confirm with the user and offer further assistance for other queries. If the issue is not resolved, ask for additional details and repeat the troubleshooting process."
         ]
     },
     {
-        "task_name": "Provide installation and setup guidance",
+        "task_name": "Provide information on purchasing options, rental agreements, and pricing",
         "steps": [
-            "Ask the user what specific installation or setup guidance they need.",
-            "Utilize the FaissRAGWorker to search the company's internal documentation for relevant information based on the user's query.",
-            "Deliver the retrieved information to the user using the MessageWorker.",
-            "Ask the user if they need further clarification or additional assistance with the installation or setup process.",
-            "If the user needs more information, repeat steps 2 and 3. Otherwise, confirm if the user is satisfied with the assistance provided."
+            "Inquire about the specific purchasing options, rental agreements, or pricing information the user is interested in.",
+            "Use FaissRAGWorker to search and retrieve relevant information from the company's internal documentation based on the user's query.",
+            "Deliver the retrieved information to the user using MessageWorker, ensuring clarity and completeness.",
+            "Ask the user if they need further clarification or additional information on other topics.",
+            "Provide instructions or next steps based on the user's follow-up questions or confirm that their query has been resolved."
         ]
     },
     {
-        "task_name": "Assist with scheduling maintenance or service",
+        "task_name": "Schedule maintenance, repairs, and provide service agreement information",
         "steps": [
-            "Use the MessageWorker to greet the user and ask for details about the maintenance or service they want to schedule.",
-            "Utilize the FaissRAGWorker to retrieve information from the company's internal documentation about maintenance or service options and policies.",
-            "Present the retrieved information to the user using the MessageWorker, and ask the user to confirm their preferred service option and time.",
-            "If the user requests additional information or clarification, use the FaissRAGWorker again to gather further details, and provide these to the user with the MessageWorker.",
-            "Once the user confirms their choice, use the MessageWorker to finalize the scheduling and provide confirmation details, including any necessary follow-up actions or contact information."
+            "Ask the user for details about their maintenance or repair needs, including any specific issues they are experiencing or services they require.",
+            "Use the FaissRAGWorker to retrieve information about available maintenance and repair services, as well as service agreement details, from the company's internal documentation.",
+            "Provide the user with the relevant information about the services available and any related service agreement terms using the MessageWorker.",
+            "Ask the user if they would like to schedule a maintenance or repair service based on the information provided.",
+            "If the user wants to schedule a service, confirm the details such as date, time, and location, and provide confirmation of the scheduled service."
         ]
     },
     {
-        "task_name": "Provide information on policies and warranties",
+        "task_name": "Facilitate the filing of complaints and collection of customer feedback",
         "steps": [
-            "Provide information on policies and warranties"
+            "Initiate the conversation by asking the user if they would like to file a complaint or provide feedback.",
+            "If the user wants to file a complaint, ask for specific details about the issue they are experiencing.",
+            "Use FaissRAGWorker to provide any relevant information from the company's internal documentation regarding the issue raised.",
+            "Request any additional information needed to complete the complaint filing process.",
+            "Confirm the details provided by the user and inform them of the next steps in the complaint resolution process.",
+            "If the user wants to provide feedback, inquire if it's regarding a specific product, service, or general experience.",
+            "Gather detailed feedback by asking open-ended questions, ensuring the user feels heard and valued.",
+            "Thank the user for their feedback and inform them how their input will be used to improve the service or product."
+        ]
+    },
+    {
+        "task_name": "Explore partnership opportunities and custom solutions with businesses and organizations",
+        "steps": [
+            "Inquire about the organization's specific needs or interests regarding partnership opportunities or custom solutions.",
+            "Utilize the FaissRAGWorker to retrieve relevant information from the company's internal documentation that addresses the user's inquiry.",
+            "Provide the retrieved information to the user and ask if they have any further questions or require additional details.",
+            "Ask if the user would like to proceed with exploring a potential partnership, need a custom solution, or require direct contact with a sales representative.",
+            "Facilitate the next steps based on the user's decision, such as setting up a meeting with a representative or providing additional resources for further exploration."
         ]
     }
 ]
