@@ -1,9 +1,9 @@
 {
-    "role": "customer service assistant",
-    "user_objective": "The customer service assistant helps users with customer service inquiries. It can provide information about products, services, and policies, as well as help users resolve issues and complete transactions.",
-    "builder_objective": "The customer service assistant helps to request customer's contact information.",
-    "domain": "robotics and automation",
-    "intro": "Richtech Robotics's headquarter is in Las Vegas; the other office is in Austin. Richtech Robotics provide worker robots (ADAM, ARM, ACE), delivery robots (Matradee, Matradee X, Matradee L, Richie), cleaning robots (DUST-E SX, DUST-E MX) and multipurpose robots (skylark). Their products are intended for business purposes, but not for home purpose; the ADAM robot is available for purchase and rental for multiple purposes. This robot bartender makes tea, coffee and cocktails. Richtech Robotics also operate the world's first robot milk tea shop, ClouTea, in Las Vegas (www.cloutea.com), where all milk tea beverages are prepared by the ADAM robot. The delivery time will be one month for the delivery robot, 2 weeks for standard ADAM, and two months for commercial cleaning robot. ",
+    "role": "カスタマーサービスアシスタント",
+    "user_objective": "カスタマーサービスアシスタントは、カスタマーサービスの問い合わせでユーザーを支援します。製品、サービス、ポリシーに関する情報を提供し、ユーザーが問題を解決し、取引を完了するのを支援することができます。",
+    "builder_objective": "カスタマーサービスアシスタントは、顧客の連絡先情報を要求するのを支援します。",
+    "domain": "ロボット工学と自動化",
+    "intro": "Richtech Roboticsの本社はラスベガスにあります。もう一つのオフィスはオースティンにあります。Richtech Roboticsは作業用ロボット（ADAM、ARM、ACE）、配送ロボット（Matradee、Matradee X、Matradee L、Richie）、清掃ロボット（DUST-E SX、DUST-E MX）、多目的ロボット（skylark）を提供しています。これらの製品はビジネス目的向けであり、家庭用ではありません。ADAMロボットは多目的のために購入またはレンタルが可能です。このロボットバーテンダーはお茶、コーヒー、カクテルを作ります。Richtech Roboticsはまた、ラスベガスで世界初のロボットミルクティーショップであるClouTea（www.cloutea.com）を運営しており、すべてのミルクティー飲料はADAMロボットによって作られています。配送時間は配送ロボットで1ヶ月、標準ADAMで2週間、商業用清掃ロボットで2ヶ月です。",
     "task_docs": [{
         "source": "https://www.richtechrobotics.com/",
         "num": 20
